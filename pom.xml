@@ -54,11 +54,11 @@
 				<artifactId>jsweet-maven-plugin</artifactId>
 				<version>1.2.0-SNAPSHOT</version>
 				<configuration>
-					<!-- <verbose>true</verbose> -->
+					<verbose>true</verbose>
+					<definitions>true</definitions>
+					<tsOnly>true</tsOnly>
+					<tsOut>src/main/resources/src/typings/${project.artifactId}/${project.version}</tsOut>
 					<bundle>true</bundle>
-					<declaration>true</declaration>
-					<outDir>src/main/resources/META-INF/resources/webjars/${project.artifactId}/${project.version}</outDir>
-					<dtsOut>src/main/resources/src/typings/${project.artifactId}/${project.version}</dtsOut>
 					<targetVersion>ES3</targetVersion>
 				</configuration>
 				<executions>
@@ -67,29 +67,6 @@
 						<phase>generate-sources</phase>
 						<goals>
 							<goal>jsweet</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<version>1.8</version>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<configuration>
-							<target>
-								<echo message="copying generated bundles to dist..." />
-								<copy
-									file="src/main/resources/META-INF/resources/webjars/${project.artifactId}/${project.version}/bundle.js"
-									tofile="dist/${project.artifactId}.js" verbose="true" />
-								<copy
-									file="src/main/resources/src/typings/${project.artifactId}/${project.version}/bundle.d.ts"
-									tofile="dist/${project.artifactId}.d.ts" verbose="true" />
-							</target>
-						</configuration>
-						<goals>
-							<goal>run</goal>
 						</goals>
 					</execution>
 				</executions>
