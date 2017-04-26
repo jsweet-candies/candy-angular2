@@ -2,5 +2,5 @@ package def.angular.router;
 
 @FunctionalInterface
 public interface ErrorHandler {
-	Object apply(Object error);
+	Object $apply(Object error);
 }

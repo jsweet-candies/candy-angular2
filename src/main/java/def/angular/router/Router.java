@@ -118,7 +118,7 @@ public class Router {
 	 * ```
 	 *
 	 * In opposite to `navigate`, `navigateByUrl` takes a whole URL and does not
-	 * apply any delta to the current one.
+	 * $apply any delta to the current one.
 	 */
 	// navigateByUrl(url: string | UrlTree, extras?: NavigationExtras):
 	// Promise<boolean>;
