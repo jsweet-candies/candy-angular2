@@ -55,7 +55,6 @@
 				<version>2.0.0-rc1</version>
 				<configuration>
 					<verbose>true</verbose>
-					<definitions>true</definitions>
 					<tsOnly>true</tsOnly>
 					<tsOut>src/main/resources/META-INF/resources/typings/${project.artifactId}/${project.version}</tsOut>
 					<bundle>true</bundle>
