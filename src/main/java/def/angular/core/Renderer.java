@@ -1,6 +1,6 @@
 package def.angular.core;
 
-import jsweet.lang.Function;
+import def.js.Function;
 
 public class Renderer {
 	// public native Object selectRootElement(String selectorOrNode,

@@ -1,7 +1,7 @@
 package def.angular.http;
 
-import jsweet.dom.Blob;
-import jsweet.lang.ArrayBuffer;
+import def.dom.Blob;
+import def.js.ArrayBuffer;
 
 /**
  * HTTP request body used by both {@link Request} and {@link Response}

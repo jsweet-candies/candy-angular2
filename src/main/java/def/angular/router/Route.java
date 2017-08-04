@@ -36,12 +36,12 @@ public class Route {
 	Object loadChildren;
 
 	@ObjectType
-	class Data extends jsweet.lang.Object {
+	class Data extends def.js.Object {
 		public native Object $get(String name);
 	}
 
 	@ObjectType
-	class ResolveData extends jsweet.lang.Object {
+	class ResolveData extends def.js.Object {
 		public native Object $get(String name);
 	}
 

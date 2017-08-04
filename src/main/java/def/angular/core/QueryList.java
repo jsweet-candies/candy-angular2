@@ -1,6 +1,6 @@
 package def.angular.core;
 
-import jsweet.lang.Array;
+import def.js.Array;
 import jsweet.util.function.TriConsumer;
 import jsweet.util.function.TriFunction;
 
